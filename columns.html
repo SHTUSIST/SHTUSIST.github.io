@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <!--[if IE 8 ]><html class="ie ie8" class="no-js" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>ProBusiness Responsive Multipurpose Template</title>
-	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ProBusiness Responsive Multipurpose Template</title>
+    <meta name="description" content="">
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
     <link rel="stylesheet" href="css/layout/wide.css" data-name="layout">
+
+    <link rel="stylesheet" href="css/animate.css"/>
 
     <link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,69 +25,85 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<!--Start Header-->
-<header id="header">
-<div id="header-top">
-    <div class="container">
-        <div class="row">
-            <div class="hidden-xs col-lg-7 col-sm-5 top-info"><span><em class="fa fa-phone"></em>Phone: (+86) 189-3077-2686</span> <span class="hidden-sm"><em class="fa fa-envelope"></em>Email: dt2017_03g13@126.com</span></div>
-            <div class="col-lg-5">
-                <ul class="dropdown-items clearfix">
-                    <li>
-                        
-                    <li>
-                        <div class="my-account">
-                            <div class="dropdown">
-                                <a class="account-dropdown" href="#" data-toggle="dropdown">
-                                    Welcome to our website：）
-                                    <span class="caret"></span>
-                                </a>
-                          
-                            </div>
-                        </div>
-                    </li>
-                
-                </ul>
+<body class="home">
+    <header id="header">
+        <!-- Start header-top -->
+        <div id="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs col-lg-7 col-sm-5 top-info"><span><em class="fa fa-phone"></em>Phone: (+86) 189-3077-2686</span> <span class="hidden-sm"><em class="fa fa-envelope"></em>Email: dt2017_03g13@126.com </span></div>
+                    <div class="col-lg-5">
+                        <ul class="dropdown-items clearfix">
+                      
+                            <li>
+                                <div class="my-account">
+                                    <div class="dropdown">
+                                        <a class="account-dropdown" href="#" data-toggle="dropdown">
+                                            Hi, Teachers and Classmates
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu pull-right" role="menu">
+                                            <li>
+                                                <a href="#">Welcome to our webiste :)</a>
+                                            </li>
+                               
+                                      </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                               
+                           
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-</div>
-<div id="menu-bar">
-    <div class="container">
-        <div class="row">
-            <!-- Logo / Mobile Menu -->
-            <div  class="col-lg-3 col-sm-3 ">
-                <div id="logo">
-                    <h1><a href="index.html"><img src="images/logo.png" alt=""/></a></h1>
-                </div>
-            </div>
-            <!-- Navigation
-================================================== -->
-            <div class="col-lg-9 col-sm-9 navbar navbar-default navbar-static-top container" role="navigation">
-                <!--  <div class="container">-->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html"><span class="data-hover"data-hover="Home">Home</span></a>
-                             <ul class="dropdown-menu">
-                                <li><a href="index.html">Home</a></li>
-                            </ul>
-                        </li>
+        <!--/.header-top -->
 
-                        <li class="active"><a href="#"><span class="data-hover" data-hover="Homework">Homework</span></a>
-                            <ul class="dropdown-menu">
-                                      <li class="active"><a href="index.html">How to let old man become happier?</a></li>
-                          </ul>
-                        </li>
+        <div id="menu-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <div id="logo">
+                            <h1><a href="index.html"><img src="images/logo.png"/></a></h1>
+                        </div>
+                    </div>
+                    <!-- Navigation
+                    ================================================== -->
+                    <div class="col-lg-9 col-sm-9 navbar navbar-default navbar-static-top container" role="navigation">
+                        <!--  <div class="container">-->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html"><span class="data-hover"data-hover="home">home</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="active"><a href="columns.html">Home</a></li>
+  
+                                    </ul>
+                                </li>
 
+                                <li><a href="#"><span class="data-hover" data-hover="Homework">Homework</span></a>
+                                    <ul class="dropdown-menu">
+                                           <li><a href="columns1.html">How to let old man become happier?</a></li>
+                                           <li><a href="norm.html">Group Norm</a></li>
+                                    </ul>
+                                   
+                                          
+     
+                                  
+                                </li>
+                                
+         
                         <li><a href="#" ><span class="data-hover" data-hover="Project">Project</span></a>
                             <ul class="dropdown-menu">
                          
@@ -94,8 +113,8 @@
                                 <li><a href="404-page.html">To be continued</a></li>
                             </ul>
                         </li>
-
-                        <li><a href="#"><span class="data-hover" data-hover="Survey">Survey</span></a>
+                                
+                                       <li><a href="#"><span class="data-hover" data-hover="Survey">Survey</span></a>
                             <ul class="dropdown-menu">
      
    
@@ -110,281 +129,702 @@
                                 </li>
                             </ul>
                         </li>
-
-                        <li><a href="#"><span class="data-hover" data-hover="Teaminfo">Teaminfo</span></a>
+                        
+                        
+                       <li><a href="#"><span class="data-hover" data-hover="Teaminfo">Teaminfo</span></a>
                             <ul class="dropdown-menu">
                              
                                 <li><a href="blog-post.html">To be continued</a></li>
                             </ul>
                         </li>
-                     
-                    </ul>
+                                     
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.container -->
+        </div>
+        <!--/#menu-bar -->
+        <div class="slider_block">
+            <div class="flexslider top_slider">
+                <ul class="slides">
+                    <li class="slide1">
+                        <div class="container">
+                            <div class="flex_caption1">
+
+                                <p class="slide-heading FromTop">The way to be happy is to make others so.</p><br/>
+
+                                <p class="sub-line FromBottom">    by Robert Green Ingersoll  </p><br/>
+
+                                <a href="" class="slider-read FromLeft">Download Now</a>
+                            </div>
+                            <div class="flex_caption2 FromRight"></div>
+                        </div>
+                    </li>
+
+                    <li class="slide2">
+                        <div class="container">
+                            <div class="slide flex_caption1">
+                                <p class="slide-heading FromTop">ProBusiness is our theme</p><br/>
+
+                                <p class="sub-line FromRight">Dolore Magnam Aliquam Quaerat Voluptatem </p><br/>
+
+                                <a href="" class="slider-read FromLeft">Download Now</a>
+
+                            </div>
+                            <div class="flex_caption2 FromBottom"></div>
+                        </div>
+                    </li>
+
+                    <li class="slide3">
+                        <div class="container">
+                            <div class="slide flex_caption1">
+                                <p class="slide-heading FromTop">Easy to Maintain </p><br/>
+
+                                <p class="sub-line FromRight">Powerful Features & Responsive Designs </p><br/>
+
+                                <a href="" class="slider-read FromLeft">Download Now</a>
+
+                            </div>
+                            <div class="flex_caption2 FromRight"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!--End Header-->
+
+<section class="wrapper">
+<!--start info service-->
+    <section class="info_service">
+        <div class="container">
+            <div class="row sub_content">
+                <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInDown">
+                    <h1 class="intro text-center">Welcome to Our Website</h1>
+                    <p class="lead text-center">We are Happiness Weavers! Our goal is to make old people happier!</p>
+                </div>
+                <div class="rs_box  wow bounceInRight" data-wow-offset="200">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox_3">
+                            <div class="service-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Our Plan</h3>
+                                <p>
+                                    针对我们组的行动计划，我们的组员脑洞大开，纷纷提出了自己的设想，最后形成了一个统一方案
+                                </p>
+                            </div>
+                            <div class="read">
+                                <a href="https://shtusist.github.io/columns.html">read more...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox_3">
+                            <div class="service-icon">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Social Practice</h3>
+                                <p>
+                                    贵州平塘<br>
+									想想就有点小期待呢<br><br>
+                                </p>
+                            </div>
+                            <div class="read">
+                                <a href="http://baike.baidu.com/link?url=8mt0JRFuWaIiuBpKMxRlwc1F9RoAUkhBDfxD-HTO3WjxM1VyFf9MJ441W882WyyqSDdB_RRMAQ2PspN6_WzWpBdAkxlFO94RqFPDDpnJnwkCUuHOoDIO1d0CVkmw-p5aGq5Ank-RERwpfWu6C14ldD786mzx4IGGe8kVWtgyBBxsFTYEEr3Yee0oKD2wWrtQfNbkyTpIckSf5ZqkEsYLt-KTdMz4MM8jwiH55QJ0lLaF-t8tkSMr137g53WNHvwKD4qZqlvV5yBgC8Gb3UoStq">read more...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox_3">
+                            <div class="service-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Team Information</h3>
+                                <p>
+                                   To be continued.<br><br><br>
+
+                                </p>
+                            </div>
+                            <div class="read">
+                                <a href="#">read more...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="serviceBox_3">
+                            <div class="service-icon">
+                                <i class="fa fa-twitter"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Survey</h3>
+                                <p>
+                                    To be continued.<br><br><br>
+                                </p>
+                            </div>
+                            <div class="read">
+                                <a href="#">read more...</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<section class="page_head">
+    </section>
+<!--end info service-->
+
+<!--Start recent work-->
+    <section class="latest_work">
+        <div class="container">
+            <div class="row sub_content">
+                <div class="col-md-12">
+                    <div class="dividerHeading">
+                        <h4><span>Recent Work</span></h4>
+                    </div>
+                    <div id="recent-work-slider" class="owl-carousel">
+                        <div class="recent-item box">
+
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_1.png" class="img-responsive" alt=""/>
+                                <!-- <div class="option inner">
+                                    <div>
+                                        <h5>Touch and Swipe</h5>
+                                        <a href="images/portfolio/full/portfolio_1.png" class="fa fa-search mfp-image"></a>
+                                        <a href="portfolio_single.html" class="fa fa-link"></a>
+                                        <span>Mobile</span>
+                                    </div>
+                                </div>-->
+
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_1.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="recent-item box">
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_2.png" class="img-responsive" alt=""/>
+                                <!--<div class="option inner">
+                                    <div>
+                                        <h5>Touch and Swipe</h5>
+                                        <a href="images/portfolio/full/portfolio_2.png" class="fa fa-search mfp-image"></a>
+                                        <a href="portfolio_single.html" class="fa fa-link"></a>
+                                        <span>Mobile</span>
+                                    </div>
+                                </div>-->
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_2.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="recent-item box">
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_3.png" class="img-responsive" alt=""/>
+                                <!--<div class="option inner">
+                                    <div>
+                                        <h5>Touch and Swipe</h5>
+                                        <a href="images/portfolio/full/portfolio_3.png" class="fa fa-search mfp-image"></a>
+                                        <a href="portfolio_single.html" class="fa fa-link"></a>
+                                        <span>Mobile</span>
+                                    </div>
+                                </div>-->
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_3.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="recent-item box">
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_4.png" class="img-responsive" alt=""/>
+                                <!--<div class="option inner">
+                                    <div>
+                                        <h5>Touch and Swipe</h5>
+                                        <a href="images/portfolio/full/portfolio_4.png" class="fa fa-search mfp-image"></a>
+                                        <a href="portfolio_single.html" class="fa fa-link"></a>
+                                        <span>Mobile</span>
+                                    </div>
+                                </div>-->
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_4.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="recent-item box">
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_5.png" class="img-responsive" alt=""/>
+                                <!--<div class="option inner">
+                                    <div>
+                                        <h5>Touch and Swipe</h5>
+                                        <a href="images/portfolio/full/portfolio_5.png" class="fa fa-search mfp-image"></a>
+                                        <a href="portfolio_single.html" class="fa fa-link"></a>
+                                        <span>Mobile</span>
+                                    </div>
+                                </div>-->
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_5.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="recent-item box">
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_6.png" class="img-responsive" alt=""/>
+                                <!--<div class="option inner">
+                                    <div>
+                                        <h5>Touch and Swipe</h5>
+                                        <a href="images/portfolio/full/portfolio_6.png" class="fa fa-search mfp-image"></a>
+                                        <a href="portfolio_single.html" class="fa fa-link"></a>
+                                        <span>Mobile</span>
+                                    </div>
+                                </div>-->
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_6.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="recent-item box">
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_7.png" class="img-responsive" alt=""/>
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_7.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="recent-item box">
+                            <figure class="touching effect-bubba">
+                                <img src="images/portfolio/portfolio_8.png" class="img-responsive" alt=""/>
+                                <div class="option">
+                                    <a href="portfolio_single.html" class="fa fa-link"></a>
+                                    <a href="images/portfolio/full/portfolio_8.png" class="fa fa-search mfp-image"></a>
+                                </div>
+                                <figcaption class="item-description">
+                                    <h5>Touch and Swipe</h5>
+                                    <p>Mobile</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Start recent work-->
+
+<!-- Parallax with Testimonial -->
+    <section class="parallax parallax-1">
+        <div class="container">
+            <!--<h2 class="center">Testimonials</h2>-->
+            <div class="row">
+                <div id="parallax-testimonial-carousel" class="parallax-testimonial carousel wow fadeInUp">
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <div class="parallax-testimonial-item">
+                                <blockquote>
+                                    <p>Donec convallis, metus nec tempus aliquet, nunc metus adipiscing leo, a lobortis nisi dui ut odio. Nullam ultrices, eros accumsan vulputate faucibus, turpis tortor dictum.</p>
+                                </blockquote>
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <div class="parallax-testimonial-review">
+                                    <img src="images/testimonials/1.png" alt="testimonial">
+                                    <span>Jonathan Dower</span>
+                                    <small>Company Inc.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="parallax-testimonial-item">
+                                <blockquote>
+                                    <p>Metus aliquet tincidunt metus, sit amet mattis lectus sodales ac. Suspendisse rhoncus dictum eros, ut egestas eros luctus eget. Nam nibh sem, mattis et feugiat ut, porttitor nec risus.</p>
+                                </blockquote>
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <div class="parallax-testimonial-review">
+                                    <img src="images/testimonials/2.png" alt="testimonial">
+                                    <span>Jonathan Dower</span>
+                                    <small>Leopard</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="parallax-testimonial-item">
+                                <blockquote>
+                                    <p>Nunc aliquet tincidunt metus, sit amet mattis lectus sodales ac. Suspendisse rhoncus dictum eros, ut egestas eros luctus eget. Nam nibh sem, mattis et feugiat ut, porttitor nec risus.</p>
+                                </blockquote>
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </p>
+                                <div class="parallax-testimonial-review">
+                                    <img src="images/testimonials/3.png" alt="testimonial">
+                                    <span>Jonathan Dower</span>
+                                    <small>Leopard</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" data-target="#parallax-testimonial-carousel" class=""></li>
+                        <li data-slide-to="1" data-target="#parallax-testimonial-carousel" class="active"></li>
+                        <li data-slide-to="2" data-target="#parallax-testimonial-carousel" class=""></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- end : Parallax with Testimonial -->
+
+    <section class="feature_bottom">
+        <div class="container">
+            <div class="row sub_content">
+                <div class="col-lg-6  wow slideInLeft" data-wow-duration="1s">
+                    <div class="dividerHeading">
+                        <h4><span>Why Choose Us?</span></h4>
+                    </div>
+                    <p>Cras mattis consectetur purus sit amet fermen. Lorem ipsum dolor sit amet, consec adipiscing elit. Maecenas sed diam eget risus varius bland sit amet non fringilla ullamcorper magna. Nulla eu mi magna. Etiam suscipit commodo ad gravida.</p>
+                    <ul class="list_style circle">
+                        <li><a href="#"> Donec convallis, metus nec tempus aliquet</a></li>
+                        <li><a href="#"> Aenean commodo ligula eget dolor</a></li>
+                        <li><a href="#"> Cum sociis natoque penatibus mag ipsum</a></li>
+                        <li><a href="#"> Lorem ipsum dolor sit amet cons adipiscing</a></li>
+                        <li><a href="#"> Accumsan vulputate faucibus turpis dictum</a></li>
+                    </ul>
+                </div>
+
+                <!-- TESTIMONIALS -->
+                <div class="col-lg-6 wow slideInRight" data-wow-duration="1s">
+                    <div class="dividerHeading">
+                        <h4><span>What Client's Say</span></h4>
+                    </div>
+
+                    <ul class="progress-skill-bar mrg-0">
+                        <li>
+                            <span class="lable">70%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="70" class="bar" style="width: 0px; height: 0px;">
+                                    System design
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lable">80%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="80" class="bar" style="width: 0px; height: 0px;">
+                                    Data analysis
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lable">90%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="90" class="bar" style="width: 0px; height: 0px;">
+                                    Link-level analysis
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lable">80%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="80" class="bar" style="width: 0px; height: 0px;">
+                                    Coverage modelling
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="lable">70%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="70" class="bar" style="width: 0px; height: 0px;">
+                                    Strategy Solutions
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- TESTIMONIALS END -->
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <div class="row  sub_content">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="dividerHeading">
+                        <h4><span>Meet the Team</span></h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="team-item-content">
+                        <img src="images/teams/1.png" alt="profile img">
+                        <div class="team-info centered">
+                            <h5>kristiana</h5>
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat vehicula dolor. Sed in dictum justo. Ut arcu sem, cursus et nisl ac, euismod cursus erat. Curabitur ut orci porttitor ligula congue porttitor. Cras vitae justo vitae augue cursus bibendum.
+                            </small>
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="team-item-content">
+                        <img src="images/teams/2.png" alt="profile img">
+                        <div class="team-info centered">
+                            <h5>williamson</h5>
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat vehicula dolor. Sed in dictum justo. Ut arcu sem, cursus et nisl ac, euismod cursus erat. Curabitur ut orci porttitor ligula congue porttitor. Cras vitae justo vitae augue cursus bibendum.
+                            </small>
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="team-item-content">
+                        <img src="images/teams/3.png" alt="profile img">
+                        <div class="team-info centered">
+                            <h5>miranda joy</h5>
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat vehicula dolor. Sed in dictum justo. Ut arcu sem, cursus et nisl ac, euismod cursus erat. Curabitur ut orci porttitor ligula congue porttitor. Cras vitae justo vitae augue cursus bibendum.
+                            </small>
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="team-item-content">
+                        <img src="images/teams/4.png" alt="profile img">
+                        <div class="team-info centered">
+                            <h5>steve thomas</h5>
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas placerat vehicula dolor. Sed in dictum justo. Ut arcu sem, cursus et nisl ac, euismod cursus erat. Curabitur ut orci porttitor ligula congue porttitor. Cras vitae justo vitae augue cursus bibendum.
+                            </small>
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="container">
+            <div class="row sub_content">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="dividerHeading">
+                        <h4><span>Our Clients</span></h4>
+
+                    </div>
+
+                    <div class="our_clients">
+                        <ul class="client_items clearfix">
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="services.html"  data-placement="bottom" data-toggle="tooltip" title="Client 1" ><img src="images/clients/1.png" alt="" /></a></li>
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="services.html" data-placement="bottom" data-toggle="tooltip" title="Client 2" ><img src="images/clients/2.png" alt="" /></a></li>
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="services.html" data-placement="bottom" data-toggle="tooltip" title="Client 3" ><img src="images/clients/3.png" alt="" /></a></li>
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="services.html" data-placement="bottom" data-toggle="tooltip" title="Client 4" ><img src="images/clients/4.png" alt="" /></a></li>
+                        </ul><!--/ .client_items-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="promo_box reverse wow bounceInUp" data-wow-offset="50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                    <div class="promo_content">
+                        <h3>ProBusiness is awesome responsive template, with clean design.</h3>
+                        <p>Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <div class="pb_action">
+                        <a class="btn btn-lg btn-default" href="#fakelink">
+                            <i class="fa fa-shopping-cart"></i>
+                            Download Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section><!--end wrapper-->
+
+<!--start footer-->
+<footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <nav id="breadcrumbs">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li>Homework</li>
+<div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="widget_title">
+                    <h4><span>Recent Posts</span></h4>
+                </div>
+                <div class="widget_content">
+                    <ul class="links">
+                        <li> <a href="#">Aenean commodo ligula eget dolor<span>November 07, 2015</span></a></li>
+                        <li> <a href="#">Temporibus autem quibusdam <span>November 05, 2015</span></a></li>
+                        <li> <a href="#">Debitis aut rerum saepe <span>November 03, 2015</span></a></li>
+                        <li> <a href="#">Et voluptates repudiandae <span>November 02, 2015</span></a></li>
                     </ul>
-                </nav>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="widget_title">
+                    <h4><span>Twitter</span></h4>
 
-                <div class="page_title">
-                    <h2>First Homework</h2>
+                </div>
+                <div class="widget_content">
+                    <ul class="tweet_list">
+                        <li class="tweet_content item">
+                            <p class="tweet_link"><a href="#">@jquery_rain </a> Lorem ipsum dolor et, consectetur adipiscing eli</p>
+                            <span class="time">29 September 2015</span>
+                        </li>
+                        <li class="tweet_content item">
+                            <p class="tweet_link"><a href="#">@jquery_rain </a> Lorem ipsum dolor et, consectetur adipiscing eli</p>
+                            <span class="time">29 September 2015</span>
+                        </li>
+                        <li class="tweet_content item">
+                            <p class="tweet_link"><a href="#">@jquery_rain </a> Lorem ipsum dolor et, consectetur adipiscing eli</p>
+                            <span class="time">29 September 2015</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget_content">
+                    <div class="tweet_go"></div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="widget_title">
+                    <h4><span>Flickr Gallery</span></h4>
+                </div>
+                <div class="widget_content">
+                    <div class="flickr">
+                        <ul id="flickrFeed" class="flickr-feed"></ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-</header>
-<!--End Header-->
-	
-	<!--start wrapper-->
-	<section class="wrapper">
-		<section class="content">
-			<div class="container">
- 				<div class="row sub_content">
-					<div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="dividerHeading">
-						  <h4 class=""><strong><span>小组共同的目标： </span></strong></h4>
-						</div>
-						<p><br>研究手机的使用与否对老年人的幸福程度的影响，根据调查结果推广或减少手机在老年人中的使用从而帮助老年人生活得更幸福。<br><br></p>
-					</div>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="dividerHeading">
-						  <h4 class=""><strong><span>5个人思考的共同点： </span></strong></h4>
-						</div>
-						<p><br>①我们几乎都提到了自己也会变老，同理心让我们思考如何让现在的老年人幸福<br><br><br>②我们有3位同学提到了尊老是中华传统美德，思考该问题有助于发扬传统美德<br><br></p>
-					</div>
-            <div class="col-lg-12 col-md-12 col-sm-12">
-			  <div class="dividerHeading">
-			    <h4><strong><span>刘孟加薇</span></strong></h4>
-			  </div>
-			  <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading3">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                            <span class="left-icon"><i class="fa fa-question-circle"></i></span>
-                                           为何与我有关：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·我们总有一天会老去，为老人谋幸福，也是为我们自己幸福的未来做保障。<br></div>
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·我们的父母老后，也是需要照顾的老人，我们要让他们老有所依。</div>
-                                    <div class="panel-body"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·中华民族自古有尊敬长者的美德。<br><br></div>                       
-                                </div>
-              </div>
-             
-             
-             <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading4">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                            <span class="left-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                            我感兴趣的：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·心理学。如何让老人找到自己的兴趣，有生存的动力源泉，安然面对老去的年华与死亡。<br><br></div>
-                                  
-                                </div>
-                            </div>
-             
-             
-              
-            
+</footer>
+<!--end footer-->
 
-				  </div>
-                  
-                  
-                  
-                  
-               <div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="dividerHeading">
-						  <h4 class=""><strong><span>王立翱</span></strong></h4>
-						</div>
-						
-                        
-               <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading5">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                            <span class="left-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                           为何与我有关：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·我的爷爷奶奶，外公外婆都是老人。我们所有人最后都会变成老人。中国老年人人口逐渐增大，逐步进入老年人社会。他们的幸福问题会逐渐成为一个社会问题。我们身处这个社会，需要关注。
-</div>
-                                   
-                                </div>
-                            </div>
-                        
-                        
-       <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading6">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                            <span class="left-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                            我感兴趣的：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·孤寡老人的相亲与再婚问题，为他们找到继续生活的伴侣。</div>
-                                                                    </div>
-                            </div>
-                     	  </div>
-                          
-                          
-                          
-           <div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="dividerHeading">
-						  <h4 class=""><strong><span>曲原辰</span></strong></h4>
-						</div>
-						
-                        
-            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading7">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                            <span class="left-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                           为什么和我有关：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7" aria-expanded="false">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·良好的老年人政策能帮助到我的年长亲朋好友，我们也有老的一天，弘扬中华民族传统美德。</div>
-                                    
-                                </div>
-                            </div>
-                        
-                        <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading8">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                            <span class="left-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                            我所感兴趣的:
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8" aria-expanded="false">
-                                    <div class="panel-body">      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·养老院的设施与服务。<br><br></div>
-                                
-                            </div>        
-                               
-				  </div>
-                  
-                  
-                  
-          <div class="col-lg-12 col-md-12 col-sm-12">
-          <div class="dividerHeading">
-						  <h4 class=""><strong><span>储张凯文</span></strong></h4>
-						</div>
-	<div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading11">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                            <span class="left-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                            为何与我有关：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11" aria-expanded="false">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·我的家人中有老人。</div>
-                                   
-                                </div>
-                            </div>
-					
-       <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading13">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                            <span class="left-icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                            我所感兴趣的：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·加深对于幸福的理解，结合之前所学的人类行为学知识从心理学的角度进行研究。<br><br></div>
-                                 
-                                </div>
-                            </div>
-                            </div>
-              
-              
-              
-              
-              
-              
-              
-              
-              <div class="col-lg-12 col-md-12 col-sm-12">
-						<div class="dividerHeading">
-							<h4><span><strong>胡岩鹏</strong></span></h4>
-
-						</div>
-						
-                        
-                        
-                    <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading1">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                            <span class="left-icon"><i class="fa fa-question-circle"></i></span>
-                                            为何和我有关：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·因为我们自己有一天终将变老。探寻老人的幸福之路，不仅是为了做公益or完成任务，也是为了我们自己有一个美好的夕阳红。</div>
-                                </div>
-                            </div>
-                            
-                            
-                            
-          <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="heading2">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                            <span class="left-icon"><i class="fa fa-question-circle"></i></span>
-                                           我所感兴趣的：
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2" aria-expanded="false" style="height: 0px;">
-                                    <div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·随着我国步入老龄化社会，帕金森的发病率在逐年攀升。而帕金森带来的记忆损失，能力缺失，会很大程度上影响老年人的生活质量。因此，我想通过向老年人科普有关帕金森的有关知识（如什么是帕金森，哪些是发病的高风险因素，如何培养良好的生活习惯来预防帕金森），来提高老年人的幸福指数。<br></div>
-                                  
-                            </div>
-                            
-                            
-                            
-                            
-     
-					</div>
-                        
-				</div></div></div>
-        </section>
-	</section>
-	<!--end wrapper-->
-
-	<!--start footer-->
-	<!--end footer-->
-	
-	<section class="footer_bottom">
-		<div class="container">
-			<div class="row">
+<section class="footer_bottom">
+    <div class="container">
+        <div class="row">
             <div class="col-sm-6">
-              <p class="copyright">&copy; Copyright Happiness Weaver | Powered by hyp</p>
+                <p class="copyright">&copy; Copyright 2015 ProBusiness | Powered by  <a href="http://www.jqueryrain.com/">jQuery Rain</a></p>
             </div>
 
             <div class="col-sm-6 ">
@@ -399,31 +839,55 @@
                 </div>
             </div>
         </div>
-		</div>
-	</section>
+    </div>
+</section>
 
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/retina-1.1.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script> <!-- jQuery cookie -->
-    <script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Colors Switcher -->
-    <script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
-    <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/jflickrfeed.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> <!-- jQuery cookie -->
+<script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Colors Switcher -->
+<!--
+<script src="js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+-->
+<script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jflickrfeed.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
 
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
 
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 
-    <!-- Start Style Switcher -->
-    <div class="switcher"></div>
-    <!-- End Style Switcher -->
+<!-- Start Style Switcher -->
+<div class="switcher"></div>
+<!-- End Style Switcher -->
 
+
+
+    <script>
+        $('.flexslider.top_slider').flexslider({
+            animation: "fade",
+            controlNav: false,
+            directionNav: true,
+            prevText: "&larr;",
+            nextText: "&rarr;"
+        });
+    </script>
+
+    <!-- WARNING: Wow.js doesn't work in IE 9 or less -->
+    <!--[if gte IE 9 | !IE ]><!-->
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script>
+            // WOW Animation
+            new WOW().init();
+        </script>
+    <![endif]-->
 
 </body>
 </html>
