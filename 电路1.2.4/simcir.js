@@ -1220,9 +1220,6 @@ simcir.$ = function() {
     return $devices;
   };
 
-
- 
-
   var dialogManager = function() {
     var dialogs = [];
     var updateDialogs = function($dlg, remove) {
@@ -1772,36 +1769,8 @@ simcir.$ = function() {
       println('  ],');
       println('  "connectors":[');
       printArray(data.connectors);
-      println(' ]');
-
-      var texta= JSON.stringify(data.devices);
-      var textb= JSON.stringify(data.connectors);
-      var text=textb;
-
+      println('  ]');
       
-
-      function download(filename, text) {
-        var element = document.createElement('a');
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-        element.setAttribute('download', filename);
-
-        element.style.display = 'none';
-        document.body.appendChild(element);
-
-        element.click();
-
-        document.body.removeChild(element);
-      }
-
-      // Start file download.
-      document.getElementById("dwn-btn").addEventListener("click", function() {
-        // Generate download of hello.txt file with some content
-        // var text = data.devices;
-        var filename = "data.txt";
-
-        download(filename, text);
-      }, false);
-
       return buf;
     };
 
@@ -2372,6 +2341,5 @@ simcir.$ = function() {
   $s.registerDevice('In', createPortFactory('in') );
   $s.registerDevice('Out', createPortFactory('out') );
   $s.registerDevice('Joint', createJointFactory() );
-      
 
 }(simcir);

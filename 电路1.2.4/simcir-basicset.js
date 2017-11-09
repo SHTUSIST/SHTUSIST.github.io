@@ -656,7 +656,7 @@
   };
 
   // register direct current source
-  $s.registerDevice('DC(直流电)', function(device) {
+  $s.registerDevice('Begin', function(device) {
     device.addOutput();
     var super_createUI = device.createUI;
     device.createUI = function() {
@@ -715,15 +715,15 @@
   // register switches
   $s.registerDevice('PushOff', createSwitchFactory('PushOff') );
   $s.registerDevice('PushOn', createSwitchFactory('PushOn') );
-  $s.registerDevice('Toggle(开关)', createSwitchFactory('Toggle') );
+  $s.registerDevice('Sensor', createSwitchFactory('Toggle') );
 
   // register logic gates
-  $s.registerDevice('BUF(缓冲器)', createLogicGateFactory(null, BUF, drawBUF) );
-  $s.registerDevice('NOT(非门)', createLogicGateFactory(null, NOT, drawNOT) );
-  $s.registerDevice('AND(与门)', createLogicGateFactory(AND, BUF, drawAND) );
-  $s.registerDevice('NAND(与非门)', createLogicGateFactory(AND, NOT, drawNAND) );
-  $s.registerDevice('OR(或门)', createLogicGateFactory(OR, BUF, drawOR) );
-  $s.registerDevice('NOR(或非门)', createLogicGateFactory(OR, NOT, drawNOR) );
+  $s.registerDevice('BUF', createLogicGateFactory(null, BUF, drawBUF) );
+  $s.registerDevice('NOT', createLogicGateFactory(null, NOT, drawNOT) );
+  $s.registerDevice('AND', createLogicGateFactory(AND, BUF, drawAND) );
+  $s.registerDevice('NAND', createLogicGateFactory(AND, NOT, drawNAND) );
+  $s.registerDevice('OR', createLogicGateFactory(OR, BUF, drawOR) );
+  $s.registerDevice('NOR', createLogicGateFactory(OR, NOT, drawNOR) );
 
 
  
