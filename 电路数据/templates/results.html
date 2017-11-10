@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+
+/* show gold star when clicked */
+
+.rating:not(:checked)>label:hover,
+
+/* hover current star */
+
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+
+/* hover current star when changing rating */
+
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+
+/* lighten current selection */
+
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}
+</style>
+<style type="text/css">
+.form-style-4 {
+    width: 920px;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.form-style-4 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-style-4 label>span {
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+.form-style-4 input[type=text],
+.form-style-4 input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 800px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+
+.form-style-4 textarea {
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize: none;
+    height: 20px;
+}
+
+.form-style-4 textarea:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus {
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button] {
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover {
+    background: #394D61;
+}
+</style>
+<style type="text/css">
+body {
+    background: url(../images/head-3-new1.png);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+</style>
+<style type="text/css">
+    .content {
+    background-color: rgba(255, 255, 255, 0.90);
+    width: 73%;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+    color: #3d3d3d;
+    font-size: 18px;
+    margin-left: 8%;
+    margin-top: 50px;
+    text-align: justify;
+    padding: 10px 70px 30px 70px;
+</style>
+<br>
+<br>
+
+<head>
+    {% if title %}
+    <title>{{ title }} Review</title>
+    {% else %}
+    <title>Part Review</title>
+    {% endif %}
+</head>
+
+<body>
+    {% for result in results %}
+    <div class="content">
+
+        <h3 align="center">
+            <font size="8">{{result.name}}</font>
+        </h3>
+        <br>
+        <p>Parts Number: <font color="green">BBaK2315046_Converter</font></p>
+        <p>Total Rating:　<font color="red"> 3</font></p>
+        </p>
+        <p>Contributor Information:</p>
+        <p>　　{{result.username}}</p>
+        <p>　　{{result.address}}</p>
+        <p>　　{{result.email}}</p>
+    </div>
+    <div class="content">
+        <h3>
+            <font size="6">Description</font>
+        </h3>
+        <br>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" 
+                   href="#collapseTwo">
+                     Click to READ MORE.
+                </a>
+                    </h1>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {{result.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h3>
+            <font size="6">Sequence</font>
+        </h3>
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" 
+                   href="#collapseThree">
+                    Click to READ MORE.
+                </a>
+            </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    {{result.sequence}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="content">
+        <h3>
+            <font  size="6">Comments</font>
+        </h3>
+        <li>
+            {%for commit in commits%}
+            <ol>{{commit}}</ol>
+            {%endfor%}
+        </li>
+    </div>
+    <div class="content">
+        <h1>Rating</h1>
+        <fieldset class="rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label class="full" for="star5" title="Awesome - 5 stars"></label>
+            <input type="radio" id="star4half" name="rating" value="4 and a half" />
+            <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+            <input type="radio" id="star3half" name="rating" value="3 and a half" />
+            <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label class="full" for="star3" title="Meh - 3 stars"></label>
+            <input type="radio" id="star2half" name="rating" value="2 and a half" />
+            <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+            <input type="radio" id="star1half" name="rating" value="1 and a half" />
+            <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+            <input type="radio" id="starhalf" name="rating" value="half" />
+            <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+        </fieldset>
+        <br>
+    </div>
+    <div class="content" style="height: 100%;">
+        <form action="." method="post" class="form-style-4">
+            <label for="field1">
+                <span>Review</span>
+                <br>
+                <br>
+                <input type="text" name="text">
+                <br>
+                <br>
+                <input type="submit" name="commit" method="post" action="." value="Post comment">
+                <br>
+                <br>
+                <p>Your comments are valuable to us.</p>
+            </label>
+        </form>
+    </div>
+</body>
+<script language="javascript">
+function getdates() {
+    var w_array = new Array("Sunday", "Monday", "星期二", "星期三", "星期四", "星期五", "星期六");
+    var d = new Date();
+    var year = d.getFullYear();
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+    var week = d.getDay();
+    var h = d.getHours();
+    var mins = d.getMinutes();
+    var s = d.getSeconds();
+
+    if (month < 10) month = "0" + month
+    if (day < 10) month = "0" + day
+    if (h < 10) h = "0" + h
+    if (mins < 10) mins = "0" + mins
+    if (s < 10) s = "0" + s
+
+    var shows = "Until <span>" + year + "-" + month + "-" + day + " " + h + ":" + mins + ":" + s + "</span>";
+    document.getElementById("date").innerHTML = shows;
+    setTimeout("getdates()", 1000);
+}
+getdates();
+</script>
+<script type="text/javascript">
+//auto expand textarea
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight) + "px";
+}
+</script>
+
+</html>
