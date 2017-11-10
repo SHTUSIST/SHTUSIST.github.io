@@ -1701,7 +1701,7 @@ simcir.$ = function() {
 
 		data = $.extend({
 			width: 400,
-			height: 600,
+			height: 200,
 			showToolbox: true,
 			toolbox: defaultToolbox,
 			devices: [],
@@ -1957,7 +1957,7 @@ simcir.$ = function() {
 			// Generate download of hello.txt file with some content
 
 			var filename = "data.txt";
-			alert("You can send the data to us via e-mail:sypongoaoeng@gmail.com")
+			alert("You can send the data to us")
 			download(filename, JSON.stringify(getData().connectors));
 		}, false);
 
