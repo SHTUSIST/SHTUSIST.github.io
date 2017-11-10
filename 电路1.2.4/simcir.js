@@ -1701,7 +1701,7 @@ simcir.$ = function() {
 
 		data = $.extend({
 			width: 400,
-			height: 200,
+			height: 600,
 			showToolbox: true,
 			toolbox: defaultToolbox,
 			devices: [],
