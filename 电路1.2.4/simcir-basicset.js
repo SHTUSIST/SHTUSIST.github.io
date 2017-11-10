@@ -41,7 +41,7 @@
   var unit = $s.unit;
 
   // red/black
-  var defaultLEDColor = '#0080FF';
+  var defaultLEDColor = '#33cc33';
   var defaultLEDBgColor = '#000000';
 
   var multiplyColor = function() {
@@ -672,7 +672,7 @@
   });
 
   // register simple LED
-  $s.registerDevice('LED', function(device) {
+  $s.registerDevice('Generator', function(device) {
     var in1 = device.addInput();
     var super_createUI = device.createUI;
     device.createUI = function() {
