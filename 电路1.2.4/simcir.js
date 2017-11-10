@@ -1957,7 +1957,7 @@ simcir.$ = function() {
 			// Generate download of hello.txt file with some content
 
 			var filename = "data.txt";
-			alert("You can send the data to us")
+			alert("You can send the data to us via e-mail: sypongoaoeng+igem@gmail.com")
 			download(filename, JSON.stringify(getData().connectors));
 		}, false);
 
